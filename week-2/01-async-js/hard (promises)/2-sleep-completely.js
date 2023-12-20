@@ -5,6 +5,14 @@
  */
 
 function sleep(milliseconds) {
+    return new Promise((resolve,reject)=>{
+        const startTime = performance.now();
+        let goahead = true;
+        while(true){
+            if((performance.now() - startTime)>=milliseconds) break;
+        }
+        resolve();
+    })
 }
 
 module.exports = sleep;

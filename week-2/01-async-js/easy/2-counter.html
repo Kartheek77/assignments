@@ -1,0 +1,95 @@
+<!-- 
+  ## Counter without setInterval
+Without using setInterval, try to code a counter in Javascript. There is a hint at the bottom of the file if you get stuck.
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="counter1">0</div>
+  <script>
+    function updateCnt(){
+      let cnt = parseInt(document.getElementById("counter1").textContent);
+      cnt += 1;
+      document.getElementById("counter1").textContent = cnt.toString();
+      setTimeout(updateCnt,1000);
+    }
+
+    updateCnt();
+
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
